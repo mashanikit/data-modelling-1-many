@@ -47,5 +47,14 @@ Select * from cities where id=8;
 Select * from provinces where id=14;
 Select * from countries where id=1;
 
+or
+
+
+Select id FROM residences WHERE id=(Select id FROM persons WHERE name=‘Destini Davis’);
+Select id FROM provinces WHERE id=(Select id FROM cities WHERE id=8);
+Select name FROM countries WHERE id=1;
+
 
 How many articles has Aditya Mukerjee written?
+select id from authors where name='Aditya Mukerjee';
+select COUNT(name) from authors where id=2;
